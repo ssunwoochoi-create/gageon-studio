@@ -703,6 +703,7 @@ input[type=range]{width:100%;accent-color:var(--brand);height:22px;}
   .diag-target{width:100%;margin-left:0;}
   .diag-score .dv{font-size:32px;}
   .diag-empty-list{grid-template-columns:1fr;}
+  .dpack-out{max-height:none;}
 }
 
 /* ============================================================
@@ -5444,7 +5445,7 @@ function diagGradeWord(s) {
   return "노출 기반 부족";
 }
 function diagGradeUI(sc) {
-  if (sc.confirmed <= 4) return { label: "확인 전 " + sc.todo + "개 — 하나씩 눌러 주세요", cls: "mute" };
+  if (sc.confirmed <= 4) return { label: "확인 전 " + sc.todo + "개", cls: "mute" };
   const s = sc.total;
   if (s >= 75) return { label: diagGradeWord(s), cls: "ok" };
   if (s >= 55) return { label: diagGradeWord(s), cls: "warn" };
