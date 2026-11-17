@@ -3740,7 +3740,7 @@ const state = {
     palette: "cream"
   },
   lead: { name: "", store: "", industry: "", area: "", phone: "", plan: "pro", note: "" },
-  diag: { name: "", area: "", industry: "", menus: "", levels: {}, auto: [], ranAt: "", base: "" },
+  diag: { name: "", area: "", industry: "", menus: "", levels: {}, auto: [], ranAt: "", base: "", key: "" },
   ai: { provider: "none", key: "", model: "" },
   ui: { view: "profile" }
 };
@@ -4052,6 +4052,7 @@ function switchStore(id) {
     state.diag.levels = diagAutoLevels(diagSubject());
     state.diag.auto = Object.keys(state.diag.levels).map(Number);
     state.diag.ranAt = diagStamp();
+    state.diag.key = diagKeyOf(diagSubject());
     renderDiag();
   }
   save();
@@ -5472,6 +5473,9 @@ function diagStamp() {
   const t = todayInfo();
   return t.iso + " " + new Date().toTimeString().slice(0, 5);
 }
+function diagKeyOf(d) {
+  return ((d.name || "") + "|" + (d.area || "")).trim();
+}
 function diagReportText() {
   const d = diagSubject();
   const sc = diagScore(state.diag.levels);
@@ -5643,6 +5647,7 @@ function diagRun(fromProfile) {
   d.auto = Object.keys(d.levels).map(Number);
   d.base = sub.isProfile ? "profile" : "quick";
   d.ranAt = diagStamp();
+  d.key = diagKeyOf(sub);
   save();
   renderDiag();
   if (sub.isProfile) toast(fromProfile ? "① 매장 프로필 값으로 진단했습니다" : "프로필 값으로 진단했습니다 — 항목을 눌러 실제 상태로 맞춰 주세요");
@@ -5659,7 +5664,7 @@ function pullDiagFromStore(run) {
   if (run) diagRun(true); else save();
 }
 function clearDiag() {
-  state.diag = { name: "", area: "", industry: "", menus: "", levels: {}, auto: [], ranAt: "", base: "" };
+  state.diag = { name: "", area: "", industry: "", menus: "", levels: {}, auto: [], ranAt: "", base: "", key: "" };
   syncDiagInputs();
   save();
   renderDiag();
@@ -5673,6 +5678,15 @@ function bindDiagEvents() {
     if (!el) return;
     el.addEventListener("input", () => {
       readDiagInputs();
+      if (state.diag.ranAt && state.diag.key !== diagKeyOf(diagSubject())) {
+        state.diag.levels = {};
+        state.diag.auto = [];
+        state.diag.ranAt = "";
+        state.diag.key = "";
+        save();
+        renderDiag();
+        return;
+      }
       save();
       if (state.diag.ranAt) { renderDiagHero(); renderDiagPacks(); renderDiagReport(); renderDiagLinks(); }
     });
