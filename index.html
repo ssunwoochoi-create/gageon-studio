@@ -5614,7 +5614,7 @@ function syncDiagInputs() {
   Object.keys(map).forEach((id) => { const el = document.getElementById(id); if (el) el.value = map[id] || ""; });
 }
 function renderDiag() {
-  const has = !!state.diag.ranAt;
+  const has = !!state.diag.ranAt && state.diag.key === diagKeyOf(diagSubject());
   const empty = document.getElementById("diagEmpty");
   const result = document.getElementById("diagResult");
   const list = document.getElementById("diagEmptyList");
