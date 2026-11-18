@@ -767,7 +767,6 @@ input[type=range]{width:100%;accent-color:var(--brand);height:22px;}
   .pitch-box{max-height:none;}
   .prop-box{min-height:220px;}
   .btn-row .btn.grow{flex:1;}
-}
   .panel{padding:15px 14px 17px;border-radius:14px;}
   .preset-grid{grid-template-columns:1fr;}
   .menu-row{grid-template-columns:1fr 1fr;gap:6px;}
@@ -786,6 +785,128 @@ input[type=range]{width:100%;accent-color:var(--brand);height:22px;}
   .kpi .kv{font-size:16px;}
   .price-hero h2{font-size:16.5px;}
 }
+/* ============================================================
+   📖 쉬운 사용법 (왕초보 가이드)
+   ============================================================ */
+.nav-btn.gd-nav{
+  background:linear-gradient(140deg,#FFF4E7,#F8E9D8);color:var(--brand-2);
+  font-weight:850;border:1px solid var(--brand-line);margin-bottom:7px;
+}
+.nav-btn.gd-nav:hover{background:linear-gradient(140deg,#FFEFDD,#F5E2CD);color:var(--brand-2);}
+.nav-btn.gd-nav.on{background:var(--brand);color:#fff;border-color:var(--brand);}
+.nav-btn.gd-nav .n{border-color:currentColor;opacity:.65;}
+
+.gd-banner{
+  display:flex;align-items:center;gap:13px;margin-bottom:14px;
+  background:linear-gradient(140deg,#FFF6EA,#F8E8D6);border:2px solid var(--brand-line);
+  border-radius:16px;padding:14px 16px;box-shadow:var(--shadow);
+}
+.gd-banner .ic{font-size:27px;line-height:1;flex:none;}
+.gd-banner .tx{min-width:0;}
+.gd-banner .tx b{display:block;font-size:16.5px;font-weight:900;letter-spacing:-.45px;line-height:1.35;}
+.gd-banner .tx span{display:block;font-size:13.8px;color:var(--ink-2);margin-top:2px;line-height:1.5;word-break:keep-all;}
+.gd-banner .btn{margin-left:auto;flex:none;}
+
+.gd-lead{
+  background:linear-gradient(160deg,#FFF9F1,#F6E9DA);border:2px solid var(--brand-line);
+  border-radius:20px;padding:24px 24px 22px;margin-bottom:20px;
+}
+.gd-lead .k{
+  display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:850;
+  color:var(--brand-2);background:#fff;border:1px solid var(--brand-line);padding:5px 12px;border-radius:999px;
+}
+.gd-lead h2{font-size:29px;font-weight:900;letter-spacing:-1.2px;line-height:1.3;margin-top:12px;word-break:keep-all;}
+.gd-lead p{font-size:16.5px;color:var(--ink-2);margin-top:9px;line-height:1.68;font-weight:600;word-break:keep-all;}
+.gd-lead .lo{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px;align-items:center;}
+.btn.lg{font-size:15.6px;padding:13px 19px;border-radius:13px;}
+.gd-lead .lnk{font-size:13.6px;color:var(--brand-2);font-weight:800;text-decoration:none;border-bottom:1px solid var(--brand-line);padding-bottom:1px;}
+
+.gd-h{display:flex;align-items:center;gap:10px;margin:26px 0 12px;flex-wrap:wrap;}
+.gd-h h2{font-size:21px;font-weight:900;letter-spacing:-.7px;}
+.gd-h .hint{font-size:13px;color:var(--muted);font-weight:700;}
+.gd-h .ln{flex:1;height:1px;background:var(--line);min-width:20px;}
+
+.gd-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}
+.gd-step{
+  background:#fff;border:2px solid var(--line);border-radius:18px;padding:18px 17px 17px;
+  display:flex;flex-direction:column;gap:9px;box-shadow:var(--shadow);
+}
+.gd-step .no{
+  width:42px;height:42px;border-radius:13px;flex:none;
+  background:linear-gradient(155deg,#BC7440,#8C4F25);color:#fff;font-size:21px;font-weight:900;
+  display:grid;place-items:center;box-shadow:0 5px 14px rgba(140,79,37,.25);
+}
+.gd-step h3{font-size:19px;font-weight:900;letter-spacing:-.55px;line-height:1.38;word-break:keep-all;}
+.gd-step p{font-size:15px;color:var(--ink-2);line-height:1.72;word-break:keep-all;}
+.gd-step .tip{font-size:13.4px;color:var(--brand-2);background:var(--brand-soft);border-radius:10px;padding:9px 11px;line-height:1.62;font-weight:700;word-break:keep-all;}
+.gd-step .gd-go{margin-top:auto;padding-top:4px;}
+
+.gd-words{display:grid;grid-template-columns:1fr 1fr;gap:11px;}
+.gd-word{background:#fff;border:1.5px dashed var(--brand-line);border-radius:14px;padding:13px 15px;}
+.gd-word b{font-size:16px;color:var(--brand-2);letter-spacing:-.3px;}
+.gd-word span{display:block;font-size:14.4px;color:var(--ink-2);line-height:1.72;margin-top:4px;word-break:keep-all;}
+
+.gd-ex{background:#fff;border:1.5px solid var(--line);border-radius:18px;overflow:hidden;margin-bottom:16px;box-shadow:var(--shadow);}
+.gd-ex-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 18px;background:var(--card-soft);border-bottom:1px solid var(--line);}
+.gd-ex-h .tag{font-size:12.4px;font-weight:900;color:#fff;background:var(--brand);border-radius:999px;padding:4px 11px;letter-spacing:-.2px;flex:none;}
+.gd-ex-h h3{font-size:18.5px;font-weight:900;letter-spacing:-.55px;line-height:1.35;}
+.gd-ex-h .sm{margin-left:auto;font-size:12.6px;color:var(--muted);font-weight:750;}
+.gd-ex-b{padding:16px 18px 18px;display:grid;grid-template-columns:minmax(0,0.92fr) minmax(0,1.08fr);gap:18px;align-items:start;}
+.gd-lbl{font-size:13px;font-weight:900;color:var(--muted);letter-spacing:.02em;margin-bottom:7px;}
+.gd-table{width:100%;border-collapse:collapse;font-size:14.4px;}
+.gd-table th{width:80px;text-align:left;color:var(--muted);font-weight:800;font-size:13.2px;padding:7px 8px 7px 0;vertical-align:top;line-height:1.5;}
+.gd-table td{padding:7px 0;color:var(--ink);font-weight:650;line-height:1.58;word-break:keep-all;border-bottom:1px solid var(--line-soft);}
+.gd-table tr:last-child td{border-bottom:0;}
+.gd-warn{margin-top:9px;background:var(--warn-soft);border:1px solid #F0DFBC;border-radius:11px;padding:9px 11px;font-size:13.2px;color:#8A5E10;line-height:1.62;font-weight:650;word-break:keep-all;}
+.gd-out{background:#FCFAF6;border:1.5px solid var(--line);border-radius:14px;padding:13px 14px;font-size:14.2px;line-height:1.78;color:var(--ink);max-height:340px;overflow:auto;white-space:pre-wrap;word-break:keep-all;}
+.gd-then{display:flex;flex-wrap:wrap;gap:8px;margin-top:9px;align-items:center;}
+.gd-then .sm{font-size:13px;color:var(--muted);font-weight:700;}
+
+.gd-fn{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.gd-fn .it{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:13px;padding:12px 14px;cursor:pointer;text-align:left;font:inherit;transition:border-color .13s,background .13s;}
+.gd-fn .it:hover{border-color:var(--brand-line);background:#FFFCF8;}
+.gd-fn .n{font-size:13px;font-weight:900;color:var(--brand-2);background:var(--brand-soft);border-radius:8px;width:26px;height:26px;display:grid;place-items:center;flex:none;}
+.gd-fn .tx b{display:block;font-size:15.2px;font-weight:850;letter-spacing:-.3px;color:var(--ink);}
+.gd-fn .tx span{display:block;font-size:13.9px;color:var(--muted);line-height:1.6;margin-top:2px;word-break:keep-all;}
+
+.gd-qa{display:grid;grid-template-columns:1fr 1fr;gap:11px;}
+.gd-qa .q{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;}
+.gd-qa .q b{display:block;font-size:15.5px;font-weight:900;letter-spacing:-.3px;color:var(--ink);}
+.gd-qa .q p{font-size:14.4px;color:var(--ink-2);line-height:1.74;margin-top:6px;word-break:keep-all;}
+
+.gd-foot{
+  margin-top:20px;background:linear-gradient(160deg,#22304C,#182338);color:#F4EEE2;
+  border-radius:18px;padding:20px 22px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+}
+.gd-foot b{font-size:18px;font-weight:900;letter-spacing:-.5px;display:block;}
+.gd-foot span{font-size:14px;color:#C9D2E2;line-height:1.65;display:block;margin-top:3px;}
+.gd-foot .btn{margin-left:auto;flex:none;}
+
+@media (max-width:900px){
+  .gd-steps{grid-template-columns:1fr;}
+  .gd-ex-b{grid-template-columns:1fr;}
+  .gd-words,.gd-fn,.gd-qa{grid-template-columns:1fr;}
+  .gd-lead h2{font-size:23.5px;}
+  .gd-lead p{font-size:15.4px;}
+  .gd-foot .btn{margin-left:0;width:100%;}
+}
+@media (max-width:560px){
+  .gd-banner{flex-wrap:wrap;gap:10px;}
+  .gd-banner .btn{margin-left:0;width:100%;}
+  .gd-lead{padding:19px 16px 18px;border-radius:17px;}
+  .gd-lead h2{font-size:21.5px;letter-spacing:-.9px;}
+  .gd-lead p{font-size:14.8px;}
+  .gd-h h2{font-size:18.5px;}
+  .gd-step h3{font-size:17.6px;}
+  .gd-step p{font-size:14.4px;}
+  .gd-ex-h h3{font-size:16.6px;}
+  .gd-ex-h .sm{margin-left:0;width:100%;}
+  .gd-out{max-height:260px;font-size:13.6px;}
+  .gd-table{font-size:13.8px;}
+  .gd-table th{width:70px;font-size:12.6px;}
+  .gd-foot{padding:17px 16px;}
+}
+
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.001ms !important;transition-duration:.001ms !important;}
 }
@@ -812,6 +933,7 @@ input[type=range]{width:100%;accent-color:var(--brand);height:22px;}
     <div>
       <div class="nav-label">작업</div>
       <nav class="nav" id="sideNav">
+        <button class="nav-btn gd-nav" data-view="guide" type="button" aria-label="쉬운 사용법">📖 <span class="n">?</span>쉬운 사용법 (처음 오셨나요?)</button>
         <button class="nav-btn on" data-view="profile" type="button">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 5 4h14l2 5.5"/><path d="M4 9.5V20h16V9.5"/><path d="M9 20v-5h6v5"/></svg>
           <span class="n">1</span>매장 프로필
@@ -877,6 +999,7 @@ input[type=range]{width:100%;accent-color:var(--brand);height:22px;}
     </header>
 
     <nav class="mnav" id="mnav" aria-label="모듈 이동">
+      <button class="nav-btn gd-nav" data-view="guide" type="button">📖 쉬운 사용법</button>
       <button class="nav-btn on" data-view="profile" type="button">① 매장 프로필</button>
       <button class="nav-btn" data-view="promo" type="button">② 홍보글</button>
       <button class="nav-btn" data-view="cards" type="button">③ 카드뉴스</button>
@@ -889,9 +1012,193 @@ input[type=range]{width:100%;accent-color:var(--brand);height:22px;}
 
     <div class="views" id="views">
       <!-- ============================================================
+           📖 쉬운 사용법 (왕초보 가이드)
+           ============================================================ -->
+      <section class="view" id="view-guide">
+        <div class="gd-lead">
+          <span class="k">📖 처음 오셨나요?</span>
+          <h2>초등학생도 따라하는<br>가게온 PRO 사용법</h2>
+          <p>딱 3단계만 하면 오늘 홍보 끝입니다. 어려운 말은 하나도 없어요.<br>아래 <b>"이 예시로 바로 채워보기"</b>를 한 번 눌러 보시면 바로 감이 옵니다.</p>
+          <div class="lo">
+            <button class="btn primary lg" type="button" data-gd-example="bonjuk">🍚 본죽 예시로 바로 해보기</button>
+            <button class="btn ghost lg" type="button" data-gd-example="cafe">☕ 카페 예시로 바로 해보기</button>
+            <a class="lnk" href="guide.html" target="_blank" rel="noopener">인쇄·저장용 안내서 열기 ↗</a>
+          </div>
+        </div>
+
+        <div class="gd-h">
+          <h2>오늘의 홍보 루틴 · 딱 3단계</h2>
+          <span class="hint">한 번만 익히면 매일 5분</span>
+          <span class="ln"></span>
+        </div>
+
+        <div class="gd-steps">
+          <div class="gd-step">
+            <div class="no">1</div>
+            <h3>내 가게 이름·동네·메뉴 적기</h3>
+            <p>처음 한 번만 하면 됩니다. <b>매장 이름</b>, <b>동네</b>(예: 오금동), <b>대표 메뉴 3개</b>를 적으세요.<br>잘 모르겠으면 <b>[예시 매장으로 채우기]</b>를 누르고 숫자만 고치면 됩니다.</p>
+            <div class="tip">여기 적은 글이 홍보글·사진·리뷰 답글에 그대로 들어갑니다.</div>
+            <div class="gd-go"><button class="btn soft lg block" type="button" data-goto="profile">① 매장 프로필 열기 →</button></div>
+          </div>
+
+          <div class="gd-step">
+            <div class="no">2</div>
+            <h3>홍보글 버튼 누르기</h3>
+            <p>무엇을 알릴지 고르고(신메뉴·할인·휴무…), <b>[4개 채널 글 한 번에 만들기]</b> 버튼을 누르면 인스타·스레드·당근·네이버 글이 한 번에 나옵니다.</p>
+            <div class="tip">글 솜씨 필요 없습니다. 버튼만 누르면 됩니다.</div>
+            <div class="gd-go"><button class="btn soft lg block" type="button" data-goto="promo">② 홍보글 열기 →</button></div>
+          </div>
+
+          <div class="gd-step">
+            <div class="no">3</div>
+            <h3>사진 저장해서 올리기</h3>
+            <p><b>③ 카드뉴스</b>에서 <b>[3장 모두 저장]</b>을 누르면 그림이 내 폰에 저장됩니다.<br>인스타·당근 앱에서 <b>[전체 복사]</b>한 글을 붙여넣고, 방금 저장한 그림을 고르면 끝.</p>
+            <div class="tip">당근은 글 + 사진, 인스타는 사진 + 글 순서로 올리면 됩니다.</div>
+            <div class="gd-go"><button class="btn soft lg block" type="button" data-goto="cards">③ 카드뉴스 열기 →</button></div>
+          </div>
+        </div>
+
+        <div class="gd-h">
+          <h2>이 말만 알면 끝</h2>
+          <span class="hint">어려운 컴퓨터 말 풀이</span>
+          <span class="ln"></span>
+        </div>
+
+        <div class="gd-words">
+          <div class="gd-word">
+            <b>"복사" = 담아두기</b>
+            <span><b>[전체 복사]</b>를 누르면 글이 통째로 담깁니다. 카톡·인스타에 가서 입력창을 <b>길게 누른 뒤 [붙여넣기]</b>를 누르면 그 글이 그대로 들어갑니다. 손으로 타이핑하지 않아도 됩니다.</span>
+          </div>
+          <div class="gd-word">
+            <b>"PNG 저장" = 그림으로 저장</b>
+            <span>화면에 보이는 카드가 <b>사진 파일</b>로 저장됩니다. 아이폰은 위쪽 <b>[다운로드]</b> → 파일 앱에서 그림을 길게 눌러 <b>[사진에 저장]</b>, 컴퓨터는 <b>[다운로드] 폴더</b>에 저장됩니다.</span>
+          </div>
+          <div class="gd-word">
+            <b>"채널" = 글이 올라갈 곳</b>
+            <span>인스타·스레드·당근·네이버 네 곳입니다. <b>하나만 쓰셔도 됩니다.</b> 당근만 하시면 당근 글만 복사해서 올리세요.</span>
+          </div>
+          <div class="gd-word">
+            <b>"탭" = 화면 바꾸는 번호 버튼</b>
+            <span>왼쪽(폰은 화면 위)의 <b>①~⑦ 번호 버튼</b>입니다. 눌러서 화면을 바꿉니다. 언제든 눌러 보셔도 저장된 내용은 지워지지 않습니다.</span>
+          </div>
+        </div>
+
+        <div class="gd-h">
+          <h2>따라하기 예시</h2>
+          <span class="hint">눌러서 바로 해보세요</span>
+          <span class="ln"></span>
+        </div>
+
+        <div class="gd-ex">
+          <div class="gd-ex-h">
+            <span class="tag">예시 1</span>
+            <h3>동네 음식점 · 비 오는 날 단골 부르기</h3>
+            <span class="sm">당근 소식으로 올리기</span>
+          </div>
+          <div class="gd-ex-b">
+            <div>
+              <div class="gd-lbl">이렇게 적고, 버튼만 누르면</div>
+              <table class="gd-table">
+                <tr><th>매장명</th><td>본죽&amp;비빔밥 오금동사거리점</td></tr>
+                <tr><th>동네</th><td>오금동</td></tr>
+                <tr><th>대표 메뉴</th><td>불고기낙지죽 11,000원<br>버섯들깨산나물죽 10,500원</td></tr>
+                <tr><th>영업시간</th><td>월~금·일 10:00~20:00 (토요일 쉼)</td></tr>
+                <tr><th>② 목적</th><td>🍂 계절·날씨 맞춤</td></tr>
+                <tr><th>혜택·조건</th><td>비 오는 날·추운 날 포장 주문 10% 할인</td></tr>
+                <tr><th>한 마디</th><td>우산 없이 오셔도 따뜻하게 포장해 드립니다</td></tr>
+              </table>
+              <div class="gd-warn">할인 숫자는 <b>연습용 예시</b>입니다. 그대로 올리면 손님과의 약속이 되니, 우리 매장이 진짜로 해줄 수 있는 것만 적어 주세요.</div>
+            </div>
+            <div>
+              <div class="gd-lbl">나오는 결과물 (당근 글)</div>
+              <div class="gd-out" id="gdOut-bonjuk">예시 글을 준비하고 있습니다…</div>
+              <div class="gd-then">
+                <button class="btn primary lg" type="button" data-gd-example="bonjuk">이 예시로 바로 채워보기 →</button>
+                <span class="sm">눌러도 원래 매장 정보는 지워지지 않습니다</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gd-ex">
+          <div class="gd-ex-h">
+            <span class="tag">예시 2</span>
+            <h3>동네 카페 · 신메뉴 + 첫 방문 쿠폰 이미지</h3>
+            <span class="sm">카톡·인스타에 올리기</span>
+          </div>
+          <div class="gd-ex-b">
+            <div>
+              <div class="gd-lbl">이렇게 적고, 버튼만 누르면</div>
+              <table class="gd-table">
+                <tr><th>매장명</th><td>오금동 작은 카페</td></tr>
+                <tr><th>업종</th><td>카페·디저트</td></tr>
+                <tr><th>대표 메뉴</th><td>시그니처 크림라떼 5,800원<br>수제 티라미수 6,500원</td></tr>
+                <tr><th>영업시간</th><td>매일 09:00~21:00 (월요일 쉼)</td></tr>
+                <tr><th>② 목적</th><td>✨ 신메뉴·신상품</td></tr>
+                <tr><th>혜택·조건</th><td>첫 방문 10% 할인 (1인 1매, 11월 30일까지)</td></tr>
+                <tr><th>한 마디</th><td>창가 자리에서 노트북 작업하셔도 됩니다</td></tr>
+              </table>
+              <div class="gd-warn">쿠폰 조건도 <b>연습용 예시</b>입니다. 실제 날짜·조건으로 꼭 고쳐 주세요.</div>
+            </div>
+            <div>
+              <div class="gd-lbl">나오는 결과물 (인스타 글)</div>
+              <div class="gd-out" id="gdOut-cafe">예시 글을 준비하고 있습니다…</div>
+              <div class="gd-then">
+                <button class="btn primary lg" type="button" data-gd-example="cafe">이 예시로 바로 채워보기 →</button>
+                <span class="sm">누르면 ③ 카드뉴스 화면으로 이동합니다</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gd-h">
+          <h2>①~⑦ 언제 쓰는지 한 줄</h2>
+          <span class="hint">눌러서 바로 가기</span>
+          <span class="ln"></span>
+        </div>
+
+        <div class="gd-fn">
+          <button class="it" type="button" data-goto="profile"><span class="n">①</span><span class="tx"><b>매장 프로필</b><span>가게 이름·메뉴 적는 곳. 처음에 한 번만 하면 됩니다.</span></span></button>
+          <button class="it" type="button" data-goto="promo"><span class="n">②</span><span class="tx"><b>홍보글 생성</b><span>카톡·인스타·당근에 올릴 글을 대신 써 줍니다.</span></span></button>
+          <button class="it" type="button" data-goto="cards"><span class="n">③</span><span class="tx"><b>카드뉴스</b><span>사진이 없어도 되는 홍보 이미지를 만듭니다. 폰에 저장.</span></span></button>
+          <button class="it" type="button" data-goto="plan"><span class="n">④</span><span class="tx"><b>주간 플래너</b><span>이번 주 월~일, 무슨 글을 언제 올릴지 미리 정합니다.</span></span></button>
+          <button class="it" type="button" data-goto="review"><span class="n">⑤</span><span class="tx"><b>리뷰 답글</b><span>별점 1점 손님 때문에 화날 때, 답글 초안을 받습니다.</span></span></button>
+          <button class="it" type="button" data-goto="revenue"><span class="n">⑥</span><span class="tx"><b>단골·매출 관리</b><span>단골 쿠폰을 만들고, 매출이 얼마나 늘지 계산합니다.</span></span></button>
+          <button class="it" type="button" data-goto="diag"><span class="n">⑦</span><span class="tx"><b>상위노출 진단</b><span>네이버에 우리 가게가 잘 뜨는지 점수로 봅니다.</span></span></button>
+          <button class="it" type="button" data-goto="pricing"><span class="n">₩</span><span class="tx"><b>요금제·도입 안내</b><span>얼마인지, 7일 무료로 써보는 방법을 봅니다.</span></span></button>
+        </div>
+
+        <div class="gd-h">
+          <h2>왕초보 질문 4가지</h2>
+          <span class="hint">가장 많이 물어보시는 것</span>
+          <span class="ln"></span>
+        </div>
+
+        <div class="gd-qa">
+          <div class="q"><b>Q. 돈 내야 하나요?</b><p>이 화면을 쓰는 데는 돈이 나가지 않습니다. 회원가입도 없습니다. 정식 도입은 <b>7일 무료</b>로 먼저 써보시고, 그 뒤에 Starter 월 29,000원 / Pro 월 49,000원 중에서 고르시면 됩니다. [요금제·도입 안내]에 신청서가 있습니다.</p></div>
+          <div class="q"><b>Q. 폰에서도 되나요?</b><p>됩니다. 폰 브라우저에서 이 주소를 열면 화면 위에 <b>①~⑦ 버튼</b>이 나옵니다. 카톡으로 받은 링크를 눌러도 되고, 브라우저 메뉴에서 <b>[홈 화면에 추가]</b>를 하면 앱처럼 열립니다.</p></div>
+          <div class="q"><b>Q. 글이 마음에 안 들면요?</b><p><b>[다른 표현으로]</b>를 누르면 같은 내용을 다른 말로 다시 씁니다. 그래도 고치고 싶으면 [전체 복사]로 카톡 나에게 보내기·메모에 붙여넣은 뒤 거기서 고치세요. 올리기 전에 <b>가격·시간·할인</b>은 꼭 확인하세요.</p></div>
+          <div class="q"><b>Q. 사진은 어디에 저장되나요?</b><p><b>[3장 모두 저장]</b>을 누르면 내 기기에 PNG 그림 파일로 저장됩니다. 폰은 브라우저의 <b>[다운로드]</b> 목록에서, 컴퓨터는 <b>[다운로드] 폴더</b>에서 찾으시면 됩니다. 사진은 인터넷으로 올라가지 않고 이 브라우저 안에서만 만들어집니다.</p></div>
+        </div>
+
+        <div class="gd-foot">
+          <div>
+            <b>이제 매일 5분이면 됩니다</b>
+            <span>① 이름 적기(처음 한 번) → ② 홍보글 버튼 → ③ 사진 저장·올리기.<br>막히면 언제든 이 화면으로 돌아오세요.</span>
+          </div>
+          <button class="btn soft lg" type="button" data-goto="promo">오늘 홍보 시작하기 →</button>
+        </div>
+      </section>
+
+      <!-- ============================================================
            모듈 ① 매장 프로필
            ============================================================ -->
       <section class="view on" id="view-profile" aria-labelledby="pageTitle">
+        <div class="gd-banner">
+          <span class="ic">📖</span>
+          <span class="tx"><b>사용법이 어렵다면?</b><span>1분 그림 따라하기 — 초등학생도 따라할 수 있어요</span></span>
+          <button class="btn primary small" type="button" data-view="guide">쉬운 사용법 보기 →</button>
+        </div>
         <div class="store-switch-row" id="storeTabs"></div>
 
         <div class="split">
@@ -3874,8 +4181,118 @@ function copyFallback(text) {
   });
 }
 
+/* ---------------- 📖 쉬운 사용법 · 따라하기 예시 ---------------- */
+const GD_EXAMPLES = {
+  bonjuk: {
+    key: "bonjuk",
+    name: "본죽&비빔밥 오금동사거리점",
+    presetId: "korean",
+    industry: "한식·음식점",
+    area: "오금동",
+    address: "서울 송파구 동남로 317, 1층 105호",
+    phone: "02-400-0103",
+    hours: "월~금·일 10:00~20:00",
+    closed: "토요일",
+    menus: [
+      { name: "불고기낙지죽", price: "11,000원", note: "불고기와 낙지를 함께 넣어 진하게" },
+      { name: "버섯들깨산나물죽", price: "10,500원", note: "고소한 들깨와 제철 산나물" },
+      { name: "소고기야채비빔밥", price: "10,000원", note: "아침에 볶은 나물 가득" }
+    ],
+    strength: "매일 아침 매장에서 직접 끓입니다. 간이 세지 않아 아이부터 어르신까지 편하게 드실 수 있습니다.",
+    tone: "friendly",
+    purpose: "season",
+    benefit: "비 오는 날·추운 날 포장 주문 10% 할인",
+    extra: "우산 없이 오셔도 따뜻하게 포장해 드립니다. 매장 앞 주차 2대 가능합니다.",
+    channel: "dg",
+    goTo: "promo"
+  },
+  cafe: {
+    key: "cafe",
+    name: "오금동 작은 카페",
+    presetId: "cafe",
+    industry: "카페·디저트",
+    area: "오금동",
+    address: "서울 송파구 오금로 12, 1층",
+    phone: "02-400-0202",
+    hours: "매일 09:00~21:00",
+    closed: "월요일",
+    menus: [
+      { name: "시그니처 크림라떼", price: "5,800원", note: "직접 내린 에스프레소와 우유 거품" },
+      { name: "수제 티라미수", price: "6,500원", note: "매일 소량만 만드는 디저트" },
+      { name: "계절 과일 에이드", price: "6,000원", note: "생과일을 그대로 갈아 넣어" }
+    ],
+    strength: "원두는 매주 소량씩 볶고, 디저트는 그날 먹을 만큼만 만듭니다. 오래 앉아 있어도 편한 자리를 두었습니다.",
+    tone: "mood",
+    purpose: "new",
+    benefit: "첫 방문 10% 할인 (1인 1매, 11월 30일까지)",
+    extra: "창가 자리에서 노트북 작업하셔도 됩니다. 콘센트 자리도 있습니다.",
+    channel: "ig",
+    goTo: "cards"
+  }
+};
+function gdStoreOf(ex) {
+  return {
+    id: "gd-" + ex.key,
+    presetId: ex.presetId,
+    name: ex.name,
+    industry: ex.industry,
+    area: ex.area,
+    address: ex.address || "",
+    phone: ex.phone || "",
+    hours: ex.hours || "",
+    closed: ex.closed || "",
+    menus: ex.menus.map((m) => ({ name: m.name, price: m.price, note: m.note })),
+    strength: ex.strength || "",
+    tone: ex.tone || "friendly"
+  };
+}
+function gdSamplePost(ex) {
+  const s = gdStoreOf(ex);
+  const p = PURPOSES.filter((x) => x.id === ex.purpose)[0] || PURPOSES[0];
+  const ctx = { v: 0, benefit: (ex.benefit || "").trim(), extra: (ex.extra || "").trim() };
+  if (ex.channel === "dg") return buildDaangn(s, p, ctx);
+  if (ex.channel === "th") return buildThreads(s, p, ctx);
+  if (ex.channel === "nv") return buildNaver(s, p, ctx);
+  return buildIG(s, p, ctx);
+}
+function renderGuidePreviews() {
+  Object.keys(GD_EXAMPLES).forEach((k) => {
+    const el = document.getElementById("gdOut-" + k);
+    if (el) el.textContent = gdSamplePost(GD_EXAMPLES[k]);
+  });
+}
+function gdFillExample(key) {
+  const ex = GD_EXAMPLES[key];
+  if (!ex) return;
+  const s = gdStoreOf(ex);
+  s.id = uid();
+  const taken = state.stores.some((x) => (x.name || "").trim() === ex.name);
+  if (taken) s.name = ex.name + " (예시)";
+  state.stores.push(s);
+  state.activeStoreId = s.id;
+  const ps = PRESETS[ex.presetId];
+  if (ps) { state.card.palette = ps.palette; state.card.layout = ps.layout; }
+  state.card.slide = 0;
+  state.campaign = { purpose: ex.purpose, benefit: ex.benefit, extra: ex.extra, seasonEvent: "auto" };
+  state.variants = { ig: 0, th: 0, dg: 0, nv: 0 };
+  renderStoreChrome();
+  renderStoreTabs();
+  renderStoreForm();
+  renderCardControls();
+  renderPurposes();
+  generateAll(false);
+  renderPlan();
+  renderReviews();
+  renderCouponPreview();
+  renderRevResults();
+  setView(ex.goTo);
+  if (ex.goTo === "cards") toast("예시 매장과 카드뉴스가 준비됐습니다 — [3장 모두 저장]을 눌러 보세요");
+  else toast("예시 매장과 홍보글이 준비됐습니다 — 오른쪽 글에서 [전체 복사]를 눌러 보세요");
+}
+
 /* ---------------- 내비게이션 ---------------- */
 const PAGE_META = {
+  guide: ["📖 쉬운 사용법", "초등학생도 따라하는 3단계 안내입니다. 예시를 누르면 바로 채워집니다."],
   profile: ["매장 프로필", "업종을 고르면 예시 메뉴와 말투까지 자동으로 세팅됩니다."],
   promo: ["홍보글 생성", "캠페인 하나로 인스타·스레드·당근·네이버 문구를 한 번에 만듭니다."],
   cards: ["카드뉴스 스튜디오", "1080px PNG 카드뉴스 3장을 만들고 바로 저장하세요."],
@@ -5747,6 +6164,7 @@ function init() {
 
   renderStoreForm();
   renderPurposes();
+  renderGuidePreviews();
   renderPosts();
   renderCardControls();
   renderCardFields();
@@ -5774,6 +6192,8 @@ function init() {
 /* ---------------- 이벤트 ---------------- */
 function bindEvents() {
   document.addEventListener("click", (e) => {
+    const gdx = e.target.closest("[data-gd-example]");
+    if (gdx) { gdFillExample(gdx.getAttribute("data-gd-example")); return; }
     const nav = e.target.closest("[data-view]");
     if (nav) { setView(nav.getAttribute("data-view")); return; }
     const go = e.target.closest("[data-goto]");
