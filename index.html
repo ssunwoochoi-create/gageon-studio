@@ -4267,11 +4267,12 @@ function renderGuidePreviews() {
 function gdFillExample(key) {
   const ex = GD_EXAMPLES[key];
   if (!ex) return;
-  const s = gdStoreOf(ex);
-  s.id = uid();
-  const taken = state.stores.some((x) => (x.name || "").trim() === ex.name);
-  if (taken) s.name = ex.name + " (예시)";
-  state.stores.push(s);
+  let s = state.stores.filter((x) => (x.name || "").trim() === ex.name)[0];
+  if (!s) {
+    s = gdStoreOf(ex);
+    s.id = uid();
+    state.stores.push(s);
+  }
   state.activeStoreId = s.id;
   const ps = PRESETS[ex.presetId];
   if (ps) { state.card.palette = ps.palette; state.card.layout = ps.layout; }
