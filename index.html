@@ -4548,6 +4548,10 @@ function renderPurposes() {
     hint.innerHTML = "<b>" + esc(p.label) + "</b> — " + esc(p.tip || "") +
       "<br><br>인스타는 첫 두 줄이 전부입니다. 스레드는 댓글이 붙어야 퍼지니, 올리고 30분 안에 들어온 댓글에 꼭 답해 주세요.";
   }
+  const bi = document.getElementById("benefitInput");
+  if (bi && bi.value !== (state.campaign.benefit || "")) bi.value = state.campaign.benefit || "";
+  const ei = document.getElementById("extraInput");
+  if (ei && ei.value !== (state.campaign.extra || "")) ei.value = state.campaign.extra || "";
   renderAiChip();
 }
 function renderAiChip() {
