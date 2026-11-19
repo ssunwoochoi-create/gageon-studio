@@ -2,7 +2,7 @@
 
 동네 가게 사장님을 위한 홍보 + 매출 관리 도구입니다. 파일 하나(`index.html`)로 동작하며, 설치나 서버가 필요 없습니다.
 
-**바로 열기 → https://ssunwoochoi-create.github.io/gageon-studio/**
+**바로 열기 → https://gageon-pro.vercel.app/**
 
 ## 들어 있는 기능
 
